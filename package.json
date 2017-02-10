@@ -1,0 +1,17 @@
+{
+  "name": "destiny-graphql",
+  "version": "0.1.1",
+  "description": "GraphQL service for the Destiny API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "destiny"
+  ],
+  "author": "Jason Maher <jason@jasonmaher.me>",
+  "license": "MIT",
+  "dependencies": {
+    "destiny-api-client": "^0.1.1"
+  }
+}
