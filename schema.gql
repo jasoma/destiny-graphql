@@ -41,9 +41,9 @@ type Emblem {
 }
 
 type CharacterStats {
-    agility: Int!
     armor: Int!
     recovery: Int!
+    agility: Int!
     intellect: Int!
     discipline: Int!
     strength: Int!
@@ -53,7 +53,7 @@ type Character {
     id: ID!
     class: Class!
     # subclass: Subclass!
-    # stats: CharacterStats!
+    stats: CharacterStats!
     race: Race!
     gender: Gender!
     level: Int!
