@@ -63,6 +63,5 @@ type Account {
 }
 
 type Query {
-    search(username: String!, platform: Platform) : Account!
-    account(id: ID!, platform: Platform!) : Account!
+    player(username: String!, platform: Platform) : Account
 }

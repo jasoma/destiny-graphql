@@ -12,6 +12,7 @@
   "author": "Jason Maher <jason@jasonmaher.me>",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "destiny-api-client": "^0.1.1",
     "graphql": "^0.9.1"
   },
