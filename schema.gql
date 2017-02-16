@@ -4,6 +4,12 @@ enum Platform {
     XBOX
 }
 
+enum Race {
+    Human,
+    Awoken,
+    Exo
+}
+
 enum Gender {
     Male,
     Female
@@ -48,6 +54,7 @@ type Character {
     class: Class!
     # subclass: Subclass!
     # stats: CharacterStats!
+    race: Race!
     gender: Gender!
     level: Int!
     light: Int!
