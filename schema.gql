@@ -1,0 +1,68 @@
+
+enum Platform {
+    PSN
+    XBOX
+}
+
+enum Gender {
+    Male,
+    Female
+}
+
+enum Class {
+    Titan
+    Warlock
+    Hunter
+}
+
+enum Subclass {
+    Striker
+    Defender
+    Sunbreaker
+    Stormcaller
+    Voidwalker
+    Sunsinger
+    Bladedancer
+    Nightstalker
+    Gunslinger
+}
+
+type Emblem {
+    id: ID!
+    name: String!
+    iconPath: String!
+    backgroundPath: String!
+}
+
+type CharacterStats {
+    agility: Int!
+    armor: Int!
+    recovery: Int!
+    intellect: Int!
+    discipline: Int!
+    strength: Int!
+}
+
+type Character {
+    id: ID!
+    class: Class!
+    # subclass: Subclass!
+    # stats: CharacterStats!
+    gender: Gender!
+    level: Int!
+    light: Int!
+    playTime: Int!
+}
+
+type Account {
+    id: ID!
+    username: String!
+    platform: Platform!
+    grimoireScore: Int!
+    characters: [Character!]!
+}
+
+type Query {
+    search(username: String!, platform: Platform) : Account!
+    account(id: ID!, platform: Platform!) : Account!
+}

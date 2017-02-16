@@ -12,6 +12,10 @@
   "author": "Jason Maher <jason@jasonmaher.me>",
   "license": "MIT",
   "dependencies": {
-    "destiny-api-client": "^0.1.1"
+    "destiny-api-client": "^0.1.1",
+    "graphql": "^0.9.1"
+  },
+  "devDependencies": {
+    "fs-promise": "^2.0.0"
   }
 }
