@@ -14,9 +14,17 @@
   "dependencies": {
     "bluebird": "^3.4.7",
     "destiny-api-client": "^0.1.1",
-    "graphql": "^0.9.1"
+    "destiny-manifest-extractor": "^1.1.2",
+    "fs-promise": "^2.0.0",
+    "graphql": "^0.9.1",
+    "lru-cache": "^4.0.2"
   },
   "devDependencies": {
-    "fs-promise": "^2.0.0"
+    "destiny-manifest-extractor": "^1.0.0",
+    "glob": "^7.1.1",
+    "mocha": "^3.2.0",
+    "mocha-parallel-tests": "^1.2.5",
+    "promise-retry": "^1.1.1",
+    "rimraf": "^2.5.4"
   }
 }
