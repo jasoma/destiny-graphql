@@ -15,6 +15,7 @@ function run(ql) {
         player(source, args, context) {
             context.destiny = destiny;
             context.manifest = manifest;
+            context.lang = 'en';
             return query.player(source, args, context);
         }
     });
@@ -42,6 +43,10 @@ run(`{
             level
             light
             playTime
+            equipment {
+                name
+                type
+            }
         }
     }
 }`).then(r => console.log(JSON.stringify(r,null,2)));

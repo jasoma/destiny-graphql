@@ -21,7 +21,7 @@ enum Class {
     Hunter
 }
 
-enum Subclass {
+enum SubclassType {
     Striker
     Defender
     Sunbreaker
@@ -33,11 +33,40 @@ enum Subclass {
     Gunslinger
 }
 
+enum EquipmentType {
+    PrimaryWeapon
+    SpecialWeapon
+    HeavyWeapon
+    Ghost
+    Helmet
+    Gauntlets
+    ChestArmor
+    LegArmor
+    ClassArmor
+    Artifact
+    Emblem
+    Shader
+    Sparrow
+    SparrowHorn
+    Ship
+    Emote
+    Subclass
+}
+
 type Emblem {
     id: ID!
     name: String!
     iconPath: String!
     backgroundPath: String!
+}
+
+type Equipment {
+    # the instance id of the item, the unique identifier for the item owned by this character
+    id: ID!
+    # the reference id of the item (it's hash) for looking up the base item in the manifest
+    ref: ID!
+    name: String!
+    type: EquipmentType!
 }
 
 type CharacterStats {
@@ -59,6 +88,7 @@ type Character {
     level: Int!
     light: Int!
     playTime: Int!
+    equipment: [Equipment!]!
 }
 
 type Account {
