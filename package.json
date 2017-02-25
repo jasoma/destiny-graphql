@@ -17,6 +17,7 @@
     "destiny-manifest-extractor": "^1.1.2",
     "fs-promise": "^2.0.0",
     "graphql": "^0.9.1",
+    "graphql-tools": "^0.10.0",
     "lru-cache": "^4.0.2"
   },
   "devDependencies": {
