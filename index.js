@@ -7,5 +7,5 @@ let manifest = new FileManifest();
 let destiny = new DestinyApi(process.env.DESTINY_API_KEY);
 
 module.exports = function(query) {
-    return graphql(schema, query, null, { destiny, manifest });
+    return graphql(schema, query, null, { destiny, manifest, lang: 'en' });
 }
